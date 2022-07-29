@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome Beta",
+            "runtimeExecutable": "/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta",
+            "url": "https://example.com/#this-could-be-anything",
+            // Here it is!
+            "runtimeArgs": ["--load-extension=${workspaceFolder}", "--remote-debugging-port=9222"]
+        }
+    ]
+}
+
+    
