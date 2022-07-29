@@ -40,6 +40,6 @@ export class RecorderPlugin {
   /* eslint-disable no-undef */
   chrome.devtools.recorder.registerRecorderExtensionPlugin(
     new RecorderPlugin(),
-    /* name=*/ 'Export to WDIO',
+    /* name=*/ 'wdio script',
     /* mediaType=*/ 'text/javascript'
   );
